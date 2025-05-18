@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asstes/css/all.min.css">
+    <link rel="stylesheet" href="./asstes/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asstes/css/MyStyle.css">
+    <link rel="icon" href="./asstes/img/logo.png" type="image/png">
+    <title>Yummy</title>
+</head>
+
+<body class="  text-white">
+
+    <div class="loding ">
+        <span class="loader"></span>
+    </div>
+    <nav class="navContainer">
+        <div class="navBtn bg-dark">
+            <ul>
+                <li onclick="showSectionOnly('frontSec')">Home</li>
+                <li onclick="showSectionOnly('searchSec')">Search</li>
+                <li id="btnBackToCatego" onclick="showSectionOnly('categoriesSec')">Categories</li>
+                <li id="btnBackToAreas" onclick="showSectionOnly('areaSec')">Area</li>
+                <li id="btnBackToIngred" onclick="showSectionOnly('ingredientsSec')">Ingredients</li>
+                <li onclick="showSectionOnly('contactusSec')">Contact Us</li>
+            </ul>
+
+            <div class="myName">
+                <div class="icons ">
+                    <a target="_blank" href="https://www.facebook.com/M7md.mSTfa.4422/">
+                        <i class="fa-brands fa-lg fa-facebook"> </i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/m7md_mstfa4422/">
+                        <i class="fa-brands fa-lg fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://wa.me/01003154481">
+                        <i class="fa-brands fa-lg fa-whatsapp"></i>
+                    </a>
+                </div>
+                <h6>Created by Muhammad Mustafa 2025</h6>
+            </div>
+        </div>
+
+        <div class="navHeader ">
+            <div class="logo">
+                <img src="./asstes/img/logo.png" class="w-100" alt="">
+            </div>
+            <div class="myBar">
+                <i class="fa fa-bars fa-2x " aria-hidden="true"></i>
+            </div>
+            <div class="d-flex flex-column fa-lg">
+                <a target="_blank" href="https://github.com/m7mdmstfa4422">
+                    <i class="fa-brands  pb-2  fa-github" aria-hidden="true">
+                    </i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/mohammed-mustafa-416318362/">
+                    <i class="fa-brands  pb-2  fa-linkedin" aria-hidden="true">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="frontSec" class="frontSec  ">
+        <div class=" container my-5">
+            <div id="frontSecContant" class=" row g-3">
+            </div>
+        </div>
+    </section>
+
+    <section id="searchSec" class="searchSec d-none ">
+        <div class=" container my-5">
+            <div class="row ">
+                <form action="">
+                    <div class="row ms-5 ms-sm-0 py-3 justify-content-center">
+                        <div class="col-md-5 mb-2">
+                            <input type="text" class="form-control" id="inputFind" placeholder="Search By Name">
+                        </div>
+                        <div class="col-md-5 mb-2">
+                            <input type="text" class="form-control" maxlength="1" id="inputFindLetter"
+                                placeholder="Search By First Letter">
+                        </div>
+                    </div>
+                </form>
+                <div class="row myContantsearch g-2">
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="categoriesSec" class="catedorieshSec d-none  ">
+        <div class=" container my-5">
+            <div class="myContantCategor row g-3">
+
+            </div>
+
+            <div class="myContantCategorFood  row g-3">
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="areaSec" class="areaSec  d-none">
+        <div class=" container my-5">
+            <div class="myContantArea  row g-3">
+
+                <!--                 
+                <div class="col-md-3 col-sm-12 rounded-3 col-10 ms-5 ms-sm-0">
+                    <div
+                        class="ms-3 MY-BgColor d-flex flex-column justify-content-center align-items-center rounded-3 py-4">
+                        <i class="fa-solid fa-house-laptop fa-4x mb-2 text-white"></i>
+                        <h6 class="text-white">Egypt</h6>
+                    </div>
+                </div> -->
+
+
+            </div>
+
+            <div class="myContantAreaFood row g-3">
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ingredientsSec" class="ingredientsSec d-none ">
+        <div class=" container my-5">
+            <div class="myContantIngredients row g-3">
+
+            </div>
+            <div class="myContantIngredFood row g-3">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contactusSec" class="contactusSec d-none  d-flex align-items-center justify-content-center min-vh-100">
+        <div class="container">
+            <form>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-md-5 col-sm-12 col-9 ms-sm-0 ms-5">
+                        <input id="nameInput" type="text" class="form-control" placeholder="Enter your Name">
+                        <div id="nameInputError" class="text-danger small fw-bold mt-1" style="display: none;"></div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-9 ms-sm-0 ms-5">
+                        <input id="emailInput" type="text" class="form-control" placeholder="Enter your Email">
+                        <div id="emailInputError" class="text-danger small fw-bold mt-1" style="display: none;"></div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-9 ms-sm-0 ms-5">
+                        <input id="phoneInput" type="text" class="form-control" placeholder="Enter your Phone">
+                        <div id="phoneInputError" class="text-danger small fw-bold mt-1" style="display: none;"></div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-9 ms-sm-0 ms-5">
+                        <input id="ageInput" type="text" class="form-control" placeholder="Enter your Age">
+                        <div id="ageInputError" class="text-danger small fw-bold mt-1" style="display: none;"></div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-9 ms-sm-0 ms-5">
+                        <input id="passwordInput" type="password" class="form-control"
+                            placeholder="Enter your Password">
+                        <div id="passwordInputError" class="text-danger small fw-bold mt-1" style="display: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-9 ms-sm-0 ms-5">
+                        <input id="RePasswordInput" type="password" class="form-control" placeholder="RePassword">
+                        <div id="RePasswordInputError" class="text-danger small fw-bold mt-1" style="display: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-3 col-sm-12 col-9 ms-sm-0 me-sm-3 ms-4">
+                        <button id="submitBtn" class="w-100 btn btn-grad fw-bold" type="button" disabled>Done</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <section class="detalis d-none">
+    </section>
+
+
+
+
+
+    <script src="asstes/js/jquery-3.7.1.min.js"></script>
+    <script src="asstes/js/bootstrap.bundle.min.js"></script>
+    <script src="asstes/js/main.js"></script>
+</body>
+
+</html>
