@@ -683,7 +683,7 @@ function validateField(id) {
             break;
         case 'rePassword':
             isValid = value === inputs.password.value && value !== '';
-            message = 'كلمة المرور غير متطابقة.';
+            message = 'Password does not match';
             break;
     }
 
